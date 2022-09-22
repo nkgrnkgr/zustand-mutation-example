@@ -4,7 +4,7 @@ import { Book } from "./types";
 import { AUTHORS } from "./constants";
 import { immer } from "zustand/middleware/immer";
 
-type BooksState = {
+export type BooksState = {
   books: Book[];
   addOne: (value: Omit<Book, "bookId">) => void;
   updateOne: (book: Book) => void;
