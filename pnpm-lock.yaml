@@ -7,11 +7,13 @@ specifiers:
   '@emotion/styled': ^11.10.4
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
+  '@types/uuid': ^8.3.4
   '@vitejs/plugin-react': ^2.1.0
   framer-motion: ^7.3.6
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: ^4.6.4
+  uuid: ^9.0.0
   vite: ^3.1.0
   zustand: ^4.1.1
 
@@ -23,11 +25,13 @@ dependencies:
   framer-motion: 7.3.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  uuid: 9.0.0
   zustand: 4.1.1_react@18.2.0
 
 devDependencies:
   '@types/react': 18.0.20
   '@types/react-dom': 18.0.6
+  '@types/uuid': 8.3.4
   '@vitejs/plugin-react': 2.1.0_vite@3.1.3
   typescript: 4.8.3
   vite: 3.1.3
@@ -1602,6 +1606,10 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
 
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+    dev: true
+
   /@vitejs/plugin-react/2.1.0_vite@3.1.3:
     resolution: {integrity: sha512-am6rPyyU3LzUYne3Gd9oj9c4Rzbq5hQnuGXSMT6Gujq45Il/+bunwq3lrB7wghLkiF45ygMwft37vgJ/NE8IAA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -2468,6 +2476,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
     dev: false
 
   /vite/3.1.3:
