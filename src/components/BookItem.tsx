@@ -1,7 +1,7 @@
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { Input, ListIcon, ListItem } from "@chakra-ui/react";
 import { AUTHORS } from "../modules/constants";
-import { useBooksStore } from "../modules/store";
+import { useBooksStore } from "../modules/bookStore";
 import { AuthorSelect } from "./AuthorSelect";
 
 type Props = {

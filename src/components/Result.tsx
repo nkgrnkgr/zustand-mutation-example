@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { useBooksStore } from "../modules/store";
+import { useBooksStore } from "../modules/bookStore";
 
 export const Result: React.FC = () => {
   const books = useBooksStore((state) => state.books);
