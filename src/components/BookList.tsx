@@ -3,7 +3,7 @@ import { useBooksStore } from "../modules/bookStore";
 import { BookItem } from "./BookItem";
 
 export const BookList: React.FC = () => {
-  const bookIds = useBooksStore((state) => state.books.map((b) => b.bookId));
+  const books = useBooksStore((state) => state.books);
 
   return (
     <Box>
@@ -18,8 +18,8 @@ export const BookList: React.FC = () => {
         </Text>
       </Box>
       <List spacing={3}>
-        {bookIds.map((id) => (
-          <BookItem key={id} bookId={id} />
+        {books.map((book) => (
+          <BookItem key={book.bookId} book={book} />
         ))}
       </List>
     </Box>

@@ -3,20 +3,13 @@ import { useBooksStore } from "../modules/bookStore";
 import { AUTHORS } from "../modules/constants";
 import { AuthorSelect } from "./AuthorSelect";
 import { MdBook } from "react-icons/md";
+import { Book } from "../modules/types";
 
 type Props = {
-  bookId: string;
+  book: Book;
 };
-export const BookItem: React.FC<Props> = ({ bookId }) => {
-  const book = useBooksStore((state) =>
-    state.books.find((book) => book.bookId === bookId)
-  );
+export const BookItem: React.FC<Props> = ({ book }) => {
   const update = useBooksStore((state) => state.updateOne);
-
-  if (!book) {
-    return null;
-  }
-
   const handleChange = (value: string) => {
     update({
       ...book,

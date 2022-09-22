@@ -44,7 +44,7 @@ export const useBooksStore = create<BooksState>()(
     updateOne(book) {
       set((state) => {
         const index = state.books.findIndex((b) => b.bookId === book.bookId);
-        if (index > 0) {
+        if (index > -1) {
           state.books[index] = book;
         }
       });
