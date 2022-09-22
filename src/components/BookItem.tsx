@@ -1,8 +1,8 @@
-import { CheckCircleIcon } from "@chakra-ui/icons";
-import { Input, ListIcon, ListItem } from "@chakra-ui/react";
-import { AUTHORS } from "../modules/constants";
+import { Icon, Input, ListItem } from "@chakra-ui/react";
 import { useBooksStore } from "../modules/bookStore";
+import { AUTHORS } from "../modules/constants";
 import { AuthorSelect } from "./AuthorSelect";
+import { MdBook } from "react-icons/md";
 
 type Props = {
   bookId: string;
@@ -39,7 +39,7 @@ export const BookItem: React.FC<Props> = ({ bookId }) => {
         gap: 1,
       }}
     >
-      <ListIcon as={CheckCircleIcon} color="green.500" />
+      <Icon as={MdBook} color="green.500" />
       <Input
         type="text"
         value={book.title}
